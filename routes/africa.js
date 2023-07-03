@@ -4,7 +4,9 @@ const router=express.Router();
   
 // Handling request using router
 router.get("/",(req,res,next)=>{
-    res.send("Mount Kilamanjaro 5,895 meters (19,340 feet)");
+    res.json({
+          highestMountain: "Mount Kilamanjaro 5,895 meters (19,340 feet)"
+    });
 });
   
 // Importing the router

@@ -6,6 +6,9 @@ const router=express.Router();
   
 // Handling login request
 router.get("/",(req,res,next)=>{
-    res.send("Denali 6,190 meters (20,310 feet)");
+        res.json({
+          highestMountain: "Denali 6,190 meters (20,310 feet)"
+    });
 })
+
 module.exports = router;

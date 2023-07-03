@@ -6,6 +6,9 @@ const router=express.Router();
   
 // Handling login request
 router.get("/",(req,res,next)=>{
-    res.send("Puncak Jaya 4,884 meters (16,024 feet)");
+        res.json({
+          highestMountain: "Puncak Jaya 4,884 meters (16,024 feet)"
+    });
 })
+
 module.exports = router;

@@ -6,6 +6,9 @@ const router=express.Router();
   
 // Handling login request
 router.get("/",(req,res,next)=>{
-    res.send("Mount Elbrus 5,642 meters (18,510 feet)");
+        res.json({
+          highestMountain: "Mount Elbrus 5,642 meters (18,510 feet)"
+    });
 })
+
 module.exports = router;

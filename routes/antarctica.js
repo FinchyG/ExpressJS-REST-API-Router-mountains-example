@@ -6,6 +6,9 @@ const router=express.Router();
   
 // Handling login request
 router.get("/",(req,res,next)=>{
-    res.send("Mount Vinson Peak 4,892 meters (16,050 feet)");
+        res.json({
+          highestMountain: "Mount Vinson Peak 4,892 meters (16,050 feet)"
+    });
 })
+
 module.exports = router;
